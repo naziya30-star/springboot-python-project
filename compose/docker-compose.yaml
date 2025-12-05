@@ -15,7 +15,7 @@ services:
   be-app:
     container_name: be-app
     build:
-      context: ../
+      context:  ../backend
       dockerfile: Dockerfile
       args:
         TAG: compose-v1
@@ -33,7 +33,7 @@ services:
   fe-app:
     container_name: fe-app
     build:
-      context: /Users/shivakumar/Documents/app_projects/python_projects/DataStoreFront/
+      context:  ../frontend
       dockerfile: Dockerfile-frontend
       args:
         TAG: compose-v1
